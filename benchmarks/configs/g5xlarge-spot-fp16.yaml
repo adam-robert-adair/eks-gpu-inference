@@ -1,0 +1,15 @@
+name: g5xlarge-spot-fp16
+model: Qwen/Qwen2.5-1.5B-Instruct
+instance_type: g5.xlarge
+pricing: spot
+precision: fp16
+region: us-west-2
+concurrency: [1, 4, 16, 64]
+input_tokens: 256
+output_tokens: 256
+runs: 3
+vllm_version: v0.6.4.post1
+cuda_driver: "550.54"
+karpenter_version: v1.0.8
+price_per_hour_usd: 0.526
+date: "2026-11-10"

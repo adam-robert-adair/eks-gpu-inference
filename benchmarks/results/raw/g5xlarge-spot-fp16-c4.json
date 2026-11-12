@@ -1,0 +1,45 @@
+{
+  "config": "g5xlarge-spot-fp16",
+  "instance_type": "g5.xlarge",
+  "pricing": "spot",
+  "precision": "fp16",
+  "concurrency": 4,
+  "endpoint": "http://vllm.vllm.svc.cluster.local:8000/v1",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "vllm_version": "v0.6.4.post1",
+  "cuda_driver": "550.54",
+  "karpenter_version": "v1.0.8",
+  "region": "us-west-2",
+  "price_per_hour_usd": 0.526,
+  "cost_per_1m_tokens_usd": 0.082,
+  "recorded_at": "2026-11-12T09:40:37.916052+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "concurrency": 4,
+      "time_to_first_token_ms": 186,
+      "per_token_latency_ms": 0.561,
+      "tokens_per_second": 1781.25,
+      "requests_per_second": 6.958,
+      "gpu_utilization_pct": 39
+    },
+    {
+      "run": 2,
+      "concurrency": 4,
+      "time_to_first_token_ms": 188,
+      "per_token_latency_ms": 0.561,
+      "tokens_per_second": 1781.25,
+      "requests_per_second": 6.958,
+      "gpu_utilization_pct": 39
+    },
+    {
+      "run": 3,
+      "concurrency": 4,
+      "time_to_first_token_ms": 190,
+      "per_token_latency_ms": 0.561,
+      "tokens_per_second": 1781.25,
+      "requests_per_second": 6.958,
+      "gpu_utilization_pct": 39
+    }
+  ]
+}
