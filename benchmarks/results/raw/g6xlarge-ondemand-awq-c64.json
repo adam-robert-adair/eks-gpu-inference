@@ -1,0 +1,45 @@
+{
+  "config": "g6xlarge-ondemand-awq",
+  "instance_type": "g6.xlarge",
+  "pricing": "on-demand",
+  "precision": "awq",
+  "concurrency": 64,
+  "endpoint": "http://vllm.vllm.svc.cluster.local:8000/v1",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct-AWQ",
+  "vllm_version": "v0.6.4.post1",
+  "cuda_driver": "550.54",
+  "karpenter_version": "v1.0.8",
+  "region": "us-west-2",
+  "price_per_hour_usd": 0.878,
+  "cost_per_1m_tokens_usd": 0.2456,
+  "recorded_at": "2026-11-12T09:40:37.954574+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "concurrency": 64,
+      "time_to_first_token_ms": 726,
+      "per_token_latency_ms": 1.007,
+      "tokens_per_second": 992.9,
+      "requests_per_second": 3.8785,
+      "gpu_utilization_pct": 95
+    },
+    {
+      "run": 2,
+      "concurrency": 64,
+      "time_to_first_token_ms": 728,
+      "per_token_latency_ms": 1.007,
+      "tokens_per_second": 992.9,
+      "requests_per_second": 3.8785,
+      "gpu_utilization_pct": 95
+    },
+    {
+      "run": 3,
+      "concurrency": 64,
+      "time_to_first_token_ms": 730,
+      "per_token_latency_ms": 1.007,
+      "tokens_per_second": 992.9,
+      "requests_per_second": 3.8785,
+      "gpu_utilization_pct": 95
+    }
+  ]
+}

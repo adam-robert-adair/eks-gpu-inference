@@ -1,0 +1,11 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+*.retry
+.DS_Store
+benchmarks/results/generated/
+
+__pycache__/
+*.pyc
